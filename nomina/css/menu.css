@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+
+.menu > li{
+    display: inline-block;
+    position: relative;
+}
+.menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: black;
+
+    font-family: 'Big Shoulders Stencil';
+}  
+.menu > li > a:hover{
+    background-color: #d3d3d3;
+    border-radius: 50px;
+}  
+.menu{
+    
+   
+    margin-left: 80%;
+    padding: 0;
+    list-style:none;
+}
+.menu li{
+
+    display: inline-block;
+}
+.menu > li > a{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    
+    display: block;
+    padding: 10px;
+    color: #070809 !important;
+    
+}
+.submenu{
+    border-radius: 20px;
+    position: absolute;
+    padding: 13px;
+    background-color: #a0a0a0;
+    width: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .7s;
+}
+.submenu > li > a{
+    
+    display: block;
+    
+    color: black;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+.cont{
+    width: 80%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin-left: 10%;
+   
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+}
+.fm{
+    margin: 5%;
+}
+.resg{
+    margin: 2%;
+
+}
+.resg ul{
+    list-style: none;
+
+}
+.resg ul li a{
+    font-family: 'Abril Fatface', cursive;
+    color: #3369F7 !important;
+    padding: 10px;
+    transition: all .2s;
+}
+.resg ul li{
+    margin: 2%;
+}
+
+.resg ul li a:hover{
+    text-decoration: none;
+    background-color: #3369F7;
+    color: #ffffff !important;
+    border-radius: 50px;
+}
+@media screen and (max-width: 600px){
+    .menu{
+        margin-left: 60%;
+    }
+}
